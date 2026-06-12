@@ -1,0 +1,134 @@
+/* ============================================================
+   ONYX Design Tokens
+   CSS Custom Properties for the complete ONYX design system
+   Source: STITCH_DESIGN_SYSTEM.md / DESIGN.md
+   ============================================================ */
+
+:root {
+  /* ---- Surface Colors (Obsidian Palette) ---- */
+  --onyx-surface: #131313;
+  --onyx-surface-dim: #131313;
+  --onyx-surface-bright: #3a3939;
+  --onyx-surface-container-lowest: #0e0e0e;
+  --onyx-surface-container-low: #1c1b1b;
+  --onyx-surface-container: #201f1f;
+  --onyx-surface-container-high: #2a2a2a;
+  --onyx-surface-container-highest: #353534;
+  --onyx-on-surface: #e5e2e1;
+  --onyx-on-surface-variant: #c4c9ac;
+  --onyx-inverse-surface: #e5e2e1;
+  --onyx-inverse-on-surface: #313030;
+  --onyx-surface-tint: #abd600;
+  --onyx-surface-variant: #353534;
+
+  /* ---- Background ---- */
+  --onyx-background: #131313;
+  --onyx-on-background: #e5e2e1;
+  --onyx-obsidian-surface: #121212;
+
+  /* ---- Primary (Electric Lime) ---- */
+  --onyx-primary: #ffffff;
+  --onyx-on-primary: #283500;
+  --onyx-primary-container: #c3f400;
+  --onyx-on-primary-container: #556d00;
+  --onyx-inverse-primary: #506600;
+  --onyx-primary-fixed: #c3f400;
+  --onyx-primary-fixed-dim: #abd600;
+  --onyx-on-primary-fixed: #161e00;
+  --onyx-on-primary-fixed-variant: #3c4d00;
+
+  /* ---- Secondary (Ice Blue) ---- */
+  --onyx-secondary: #d3fbff;
+  --onyx-on-secondary: #00363a;
+  --onyx-secondary-container: #00eefc;
+  --onyx-on-secondary-container: #00686f;
+  --onyx-secondary-fixed: #7df4ff;
+  --onyx-secondary-fixed-dim: #00dbe9;
+  --onyx-on-secondary-fixed: #002022;
+  --onyx-on-secondary-fixed-variant: #004f54;
+
+  /* ---- Tertiary (Coral Red) ---- */
+  --onyx-tertiary: #ffffff;
+  --onyx-on-tertiary: #68000b;
+  --onyx-tertiary-container: #ffdad7;
+  --onyx-on-tertiary-container: #c41e27;
+  --onyx-tertiary-fixed: #ffdad7;
+  --onyx-tertiary-fixed-dim: #ffb3ae;
+  --onyx-on-tertiary-fixed: #410004;
+  --onyx-on-tertiary-fixed-variant: #930014;
+
+  /* ---- Error ---- */
+  --onyx-error: #ffb4ab;
+  --onyx-on-error: #690005;
+  --onyx-error-container: #93000a;
+  --onyx-on-error-container: #ffdad6;
+
+  /* ---- Outline ---- */
+  --onyx-outline: #8e9379;
+  --onyx-outline-variant: #444933;
+
+  /* ---- Glass & Glow ---- */
+  --onyx-glass-border: rgba(255, 255, 255, 0.08);
+  --onyx-neon-glow-lime: rgba(204, 255, 0, 0.15);
+  --onyx-neon-glow-cyan: rgba(0, 240, 255, 0.15);
+
+  /* ---- Typography: Font Families ---- */
+  --onyx-font-geist: var(--font-geist-sans);
+  --onyx-font-inter: var(--font-inter);
+  --onyx-font-jetbrains-mono: var(--font-jetbrains-mono);
+
+  /* ---- Typography: Display ---- */
+  --onyx-display-stats-font-size: 48px;
+  --onyx-display-stats-font-weight: 700;
+  --onyx-display-stats-line-height: 1;
+  --onyx-display-stats-letter-spacing: -0.04em;
+
+  /* ---- Typography: Headline Large ---- */
+  --onyx-headline-lg-font-size: 32px;
+  --onyx-headline-lg-font-weight: 700;
+  --onyx-headline-lg-line-height: 40px;
+  --onyx-headline-lg-letter-spacing: -0.02em;
+
+  /* ---- Typography: Headline Medium ---- */
+  --onyx-headline-md-font-size: 24px;
+  --onyx-headline-md-font-weight: 600;
+  --onyx-headline-md-line-height: 32px;
+  --onyx-headline-md-letter-spacing: -0.01em;
+
+  /* ---- Typography: Body Large ---- */
+  --onyx-body-lg-font-size: 18px;
+  --onyx-body-lg-font-weight: 400;
+  --onyx-body-lg-line-height: 28px;
+
+  /* ---- Typography: Body Medium ---- */
+  --onyx-body-md-font-size: 16px;
+  --onyx-body-md-font-weight: 400;
+  --onyx-body-md-line-height: 24px;
+
+  /* ---- Typography: Label Caps ---- */
+  --onyx-label-caps-font-size: 12px;
+  --onyx-label-caps-font-weight: 600;
+  --onyx-label-caps-line-height: 16px;
+  --onyx-label-caps-letter-spacing: 0.1em;
+
+  /* ---- Typography: Stat Label ---- */
+  --onyx-stat-label-font-size: 14px;
+  --onyx-stat-label-font-weight: 500;
+  --onyx-stat-label-line-height: 20px;
+
+  /* ---- Spacing ---- */
+  --onyx-container-max: 448px;
+  --onyx-edge-margin: 1.25rem;
+  --onyx-gutter: 1rem;
+  --onyx-stack-sm: 0.5rem;
+  --onyx-stack-md: 1rem;
+  --onyx-stack-lg: 2rem;
+
+  /* ---- Border Radius ---- */
+  --onyx-radius-sm: 0.25rem;
+  --onyx-radius-default: 0.5rem;
+  --onyx-radius-md: 0.75rem;
+  --onyx-radius-lg: 1rem;
+  --onyx-radius-xl: 1.5rem;
+  --onyx-radius-full: 9999px;
+}

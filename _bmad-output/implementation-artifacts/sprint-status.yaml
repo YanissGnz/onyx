@@ -1,0 +1,92 @@
+# generated: 2026-06-08T17:45:00+01:00
+# last_updated: 2026-06-09T13:55:00+01:00
+# project: onyx
+# project_key: NOKEY
+# tracking_system: file-system
+# story_location: _bmad-output/implementation-artifacts
+
+# STATUS DEFINITIONS:
+# ==================
+# Epic Status:
+#   - backlog: Epic not yet started
+#   - in-progress: Epic actively being worked on
+#   - done: All stories in epic completed
+#
+# Epic Status Transitions:
+#   - backlog → in-progress: Automatically when first story is created (via create-story)
+#   - in-progress → done: Manually when all stories reach 'done' status
+#
+# Story Status:
+#   - backlog: Story only exists in epic file
+#   - ready-for-dev: Story file created in stories folder
+#   - in-progress: Developer actively working on implementation
+#   - review: Ready for code review (via Dev's code-review workflow)
+#   - done: Story completed
+#
+# Retrospective Status:
+#   - optional: Can be completed but not required
+#   - done: Retrospective has been completed
+#
+# WORKFLOW NOTES:
+# ===============
+# - Epic transitions to 'in-progress' automatically when first story is created
+# - Stories can be worked in parallel if team capacity allows
+# - Developer typically creates next story after previous one is 'done' to incorporate learnings
+# - Dev moves story to 'review', then runs code-review (fresh context, different LLM recommended)
+
+generated: 2026-06-08T17:45:00+01:00
+last_updated: 2026-06-11T17:54:00+01:00
+project: onyx
+project_key: NOKEY
+tracking_system: file-system
+story_location: _bmad-output/implementation-artifacts
+
+development_status:
+  # Epic 1: Foundation — Project Scaffold, Auth & Onboarding
+  epic-1: in-progress
+  1-1-project-scaffold-and-supabase-schema: done
+  1-2-user-authentication: done
+  1-3-onboarding-wizard: done
+  1-4-profile-management: done
+  epic-1-retrospective: optional
+
+  # Epic 2: Core Shell — Dashboard, PWA, Theme & Offline Infrastructure
+  epic-2: in-progress
+  2-1-design-token-system-and-dark-theme-shell: done
+  2-2-bottom-navigation-and-tab-shell: review
+  2-3-main-dashboard: done
+  2-4-pwa-shell: review
+  2-5-offline-sync-engine: review
+  epic-2-retrospective: optional
+
+  # Epic 3: AI Engine — Gemini Proxy & Plan Generation UI
+  epic-3: backlog
+  3-1-gemini-proxy-endpoint: backlog
+  3-2-vibe-drawer: backlog
+  3-3-plan-preview-and-confirmation: backlog
+  epic-3-retrospective: optional
+
+  # Epic 4: Workout System — Plans, Templates & Session Logging
+  epic-4: backlog
+  4-1-exercise-template-crud: backlog
+  4-2-custom-workout-builder: backlog
+  4-3-ai-workout-plan-integration-and-editing: backlog
+  4-4-fullscreen-workout-mode: backlog
+  4-5-auto-progression-engine: backlog
+  epic-4-retrospective: optional
+
+  # Epic 5: Nutrition System — Meal DB, Logging & AI Meal Plans
+  epic-5: backlog
+  5-1-personal-meal-database: backlog
+  5-2-meal-logging-to-daily-intake: backlog
+  5-3-macro-ring-and-daily-nutrition-view: backlog
+  5-4-ai-meal-plan-integration: backlog
+  epic-5-retrospective: optional
+
+  # Epic 6: Progress & Analytics — Unified Stats Dashboard
+  epic-6: backlog
+  6-1-body-weight-tracking: backlog
+  6-2-lift-progression-and-workout-history: backlog
+  6-3-nutrition-history-and-adherence-view: backlog
+  6-4-unified-stats-dashboard: backlog
+  epic-6-retrospective: optional

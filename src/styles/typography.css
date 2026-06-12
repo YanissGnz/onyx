@@ -1,0 +1,58 @@
+/* ============================================================
+   ONYX Typography Utility Classes
+   Source: STITCH_DESIGN_SYSTEM.md / DESIGN.md
+   ============================================================ */
+
+.onyx-display-stats {
+  font-family: var(--onyx-font-geist);
+  font-size: var(--onyx-display-stats-font-size);
+  font-weight: var(--onyx-display-stats-font-weight);
+  line-height: var(--onyx-display-stats-line-height);
+  letter-spacing: var(--onyx-display-stats-letter-spacing);
+}
+
+.onyx-headline-lg {
+  font-family: var(--onyx-font-geist);
+  font-size: var(--onyx-headline-lg-font-size);
+  font-weight: var(--onyx-headline-lg-font-weight);
+  line-height: var(--onyx-headline-lg-line-height);
+  letter-spacing: var(--onyx-headline-lg-letter-spacing);
+}
+
+.onyx-headline-md {
+  font-family: var(--onyx-font-geist);
+  font-size: var(--onyx-headline-md-font-size);
+  font-weight: var(--onyx-headline-md-font-weight);
+  line-height: var(--onyx-headline-md-line-height);
+  letter-spacing: var(--onyx-headline-md-letter-spacing);
+}
+
+.onyx-body-lg {
+  font-family: var(--onyx-font-inter);
+  font-size: var(--onyx-body-lg-font-size);
+  font-weight: var(--onyx-body-lg-font-weight);
+  line-height: var(--onyx-body-lg-line-height);
+}
+
+.onyx-body-md {
+  font-family: var(--onyx-font-inter);
+  font-size: var(--onyx-body-md-font-size);
+  font-weight: var(--onyx-body-md-font-weight);
+  line-height: var(--onyx-body-md-line-height);
+}
+
+.onyx-label-caps {
+  font-family: var(--onyx-font-jetbrains-mono);
+  font-size: var(--onyx-label-caps-font-size);
+  font-weight: var(--onyx-label-caps-font-weight);
+  line-height: var(--onyx-label-caps-line-height);
+  letter-spacing: var(--onyx-label-caps-letter-spacing);
+  text-transform: uppercase;
+}
+
+.onyx-stat-label {
+  font-family: var(--onyx-font-jetbrains-mono);
+  font-size: var(--onyx-stat-label-font-size);
+  font-weight: var(--onyx-stat-label-font-weight);
+  line-height: var(--onyx-stat-label-line-height);
+}

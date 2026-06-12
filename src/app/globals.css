@@ -1,0 +1,126 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "../styles/tokens.css";
+@import "../styles/typography.css";
+
+@theme inline {
+  --color-surface: var(--onyx-surface);
+  --color-surface-dim: var(--onyx-surface-dim);
+  --color-surface-bright: var(--onyx-surface-bright);
+  --color-surface-container-lowest: var(--onyx-surface-container-lowest);
+  --color-surface-container-low: var(--onyx-surface-container-low);
+  --color-surface-container: var(--onyx-surface-container);
+  --color-surface-container-high: var(--onyx-surface-container-high);
+  --color-surface-container-highest: var(--onyx-surface-container-highest);
+  --color-on-surface: var(--onyx-on-surface);
+  --color-on-surface-variant: var(--onyx-on-surface-variant);
+  --color-inverse-surface: var(--onyx-inverse-surface);
+  --color-inverse-on-surface: var(--onyx-inverse-on-surface);
+  --color-surface-tint: var(--onyx-surface-tint);
+  --color-surface-variant: var(--onyx-surface-variant);
+
+  --color-background: var(--onyx-background);
+  --color-foreground: var(--onyx-on-background);
+
+  --color-primary: var(--onyx-primary);
+  --color-on-primary: var(--onyx-on-primary);
+  --color-primary-container: var(--onyx-primary-container);
+  --color-on-primary-container: var(--onyx-on-primary-container);
+  --color-inverse-primary: var(--onyx-inverse-primary);
+  --color-primary-fixed: var(--onyx-primary-fixed);
+  --color-primary-fixed-dim: var(--onyx-primary-fixed-dim);
+  --color-on-primary-fixed: var(--onyx-on-primary-fixed);
+  --color-on-primary-fixed-variant: var(--onyx-on-primary-fixed-variant);
+
+  --color-secondary: var(--onyx-secondary);
+  --color-on-secondary: var(--onyx-on-secondary);
+  --color-secondary-container: var(--onyx-secondary-container);
+  --color-on-secondary-container: var(--onyx-on-secondary-container);
+  --color-secondary-fixed: var(--onyx-secondary-fixed);
+  --color-secondary-fixed-dim: var(--onyx-secondary-fixed-dim);
+  --color-on-secondary-fixed: var(--onyx-on-secondary-fixed);
+  --color-on-secondary-fixed-variant: var(--onyx-on-secondary-fixed-variant);
+
+  --color-tertiary: var(--onyx-tertiary);
+  --color-on-tertiary: var(--onyx-on-tertiary);
+  --color-tertiary-container: var(--onyx-tertiary-container);
+  --color-on-tertiary-container: var(--onyx-on-tertiary-container);
+  --color-tertiary-fixed: var(--onyx-tertiary-fixed);
+  --color-tertiary-fixed-dim: var(--onyx-tertiary-fixed-dim);
+  --color-on-tertiary-fixed: var(--onyx-on-tertiary-fixed);
+  --color-on-tertiary-fixed-variant: var(--onyx-on-tertiary-fixed-variant);
+
+  --color-error: var(--onyx-error);
+  --color-on-error: var(--onyx-on-error);
+  --color-error-container: var(--onyx-error-container);
+  --color-on-error-container: var(--onyx-on-error-container);
+
+  --color-outline: var(--onyx-outline);
+  --color-outline-variant: var(--onyx-outline-variant);
+
+  --color-muted: var(--onyx-surface-container-low);
+  --color-muted-foreground: var(--onyx-on-surface-variant);
+  --color-border: var(--onyx-glass-border);
+  --color-ring: var(--onyx-on-surface-variant);
+  --color-glass-border: var(--onyx-glass-border);
+
+  --font-sans: var(--onyx-font-inter);
+  --font-mono: var(--onyx-font-jetbrains-mono);
+  --font-heading: var(--onyx-font-geist);
+
+  --radius-sm: var(--onyx-radius-sm);
+  --radius-md: var(--onyx-radius-md);
+  --radius-lg: var(--onyx-radius-lg);
+  --radius-xl: var(--onyx-radius-xl);
+}
+
+@layer base {
+  * {
+    @apply border-glass-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    @apply font-sans;
+  }
+}
+
+@layer utilities {
+  /* ---- Glassmorphism Utilities ---- */
+  .glass-surface {
+    background-color: rgba(18, 18, 18, 0.8);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--onyx-glass-border);
+  }
+
+  .glass-card {
+    background-color: rgba(18, 18, 18, 0.8);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--onyx-glass-border);
+    border-radius: var(--onyx-radius-md);
+  }
+
+  /* ---- Neon Glow Utilities ---- */
+  .neon-glow-lime {
+    box-shadow: 0 0 20px var(--onyx-neon-glow-lime);
+  }
+
+  .neon-glow-cyan {
+    box-shadow: 0 0 20px var(--onyx-neon-glow-cyan);
+  }
+
+  /* ---- Legacy Card Radius (used by profile/onboarding components) ---- */
+  .rounded-card {
+    border-radius: var(--onyx-radius-md);
+  }
+
+  /* ---- Layout Container ---- */
+  .onyx-container {
+    max-width: var(--onyx-container-max);
+    margin-inline: auto;
+    padding-inline: var(--onyx-edge-margin);
+  }
+}
