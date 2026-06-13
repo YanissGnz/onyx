@@ -60,9 +60,9 @@ development_status:
   epic-2-retrospective: optional
 
   # Epic 3: AI Engine — Gemini Proxy & Plan Generation UI
-  epic-3: backlog
-  3-1-gemini-proxy-endpoint: backlog
-  3-2-vibe-drawer: backlog
+  epic-3: in-progress
+  3-1-gemini-proxy-endpoint: review
+  3-2-vibe-drawer: ready-for-dev
   3-3-plan-preview-and-confirmation: backlog
   epic-3-retrospective: optional
 
