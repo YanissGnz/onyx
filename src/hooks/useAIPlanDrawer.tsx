@@ -7,8 +7,8 @@
 
 "use client";
 
-import type { AIPlanDrawerConfig, PlanType, WorkoutConfig, MealConfig } from "@/components/features/plan";
-import { createContext, useContext, useState, useCallback, type ReactNode } from "react";
+import type { MealConfig, PlanType, WorkoutConfig } from "@/components/features/plan";
+import { createContext, useCallback, useContext, useState, type ReactNode } from "react";
 
 // ---------------------------------------------------------------------------
 // Context
@@ -51,13 +51,15 @@ export function AIPlanDrawerProvider({ children }: { children: ReactNode }) {
   const [workoutConfig, setWorkoutConfig] = useState<WorkoutConfig>({
     muscleGroup: "Full Body",
     exercises: 5,
-    duration: "45 min",
+    duration: 45,
     daysPerWeek: "4 days/week",
+    equipment: ["None"],
+    workoutDays: [],
   });
   const [mealConfig, setMealConfig] = useState<MealConfig>({
-    preferredFoods: "",
-    allergies: "None",
-    foodsToAvoid: "None",
+    preferredFoods: [],
+    allergies: [],
+    foodsToAvoid: [],
     caloriesPerDay: "",
     mealsPerDay: "3",
   });

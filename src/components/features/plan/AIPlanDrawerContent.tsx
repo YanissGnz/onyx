@@ -66,23 +66,28 @@ export function AIPlanDrawerContent() {
 
       const planType = config.planType;
 
+      // Build preferences object from config
+      const preferences: Record<string, unknown> = {};
+
+      if (planType === "workout_plan" && config.workout) {
+        preferences.muscle_group = config.workout.muscleGroup;
+        preferences.exercises = config.workout.exercises;
+        preferences.duration = `${config.workout.duration} min`;
+        preferences.days_per_week = config.workout.daysPerWeek;
+        preferences.equipment = config.workout.equipment;
+        preferences.workout_days = config.workout.workoutDays;
+      } else if (planType === "meal_plan" && config.meal) {
+        preferences.preferred_foods = config.meal.preferredFoods;
+        preferences.allergies = config.meal.allergies;
+        preferences.foods_to_avoid = config.meal.foodsToAvoid;
+        preferences.calories_per_day = config.meal.caloriesPerDay;
+        preferences.meals_per_day = config.meal.mealsPerDay;
+      }
+
       const result = await generate(
         planType,
         config.customNotes || "Generate a plan with the configured options.",
-        planType === "workout_plan"
-          ? {
-              muscle_group: config.workout?.muscleGroup || "Full Body",
-              exercises: config.workout?.exercises || 5,
-              duration: config.workout?.duration || "45 min",
-              days_per_week: config.workout?.daysPerWeek || "4 days/week",
-            }
-          : {
-              preferred_foods: config.meal?.preferredFoods || "",
-              allergies: config.meal?.allergies || "None",
-              foods_to_avoid: config.meal?.foodsToAvoid || "None",
-              calories_per_day: config.meal?.caloriesPerDay || "",
-              meals_per_day: config.meal?.mealsPerDay || "3",
-            },
+        preferences,
       );
 
       if (result.plan && result.error === null) {
